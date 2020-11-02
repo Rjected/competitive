@@ -1,7 +1,14 @@
 cc_library(
-    name = "competitive",
-    srcs = [],
-    hdrs = [],
+    name = "rangequery",
+    srcs = [
+        "rangequery.cc",
+        "sparsetable.cc",
+    ],
+    hdrs = [
+        "fastlog.h",
+        "rangequery.h",
+        "sparsetable.h",
+    ],
     deps = [
         "@com_google_absl//absl/status",
         "@com_google_absl//absl/status:statusor",
@@ -10,4 +17,3 @@ cc_library(
     ],
     visibility = ["//visibility:public"],
 )
-
